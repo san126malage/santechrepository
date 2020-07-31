@@ -27,6 +27,7 @@ public class ProductService {
 
     public List<Product> getProductById(int id) {
         return (List<Product>) repository.findById(id).orElse(null);
+	    
     }
 
     public List<Product> getProductByName(String name) {
